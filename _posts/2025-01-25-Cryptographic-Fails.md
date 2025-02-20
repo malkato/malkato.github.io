@@ -93,7 +93,9 @@ thenticate the client with the server.
 ***Steps to reproduce:***
 
 • Start Burpsuite in order to capture the traffic between the server and the client
+
 • Use proxy to intercept the traffic of an action while logged in as registered account (I used the password changing section for this
+
 • You can identify the JSON Web Token in the request its in following format:
 
 ![](2025-02-18-15-57-29.png)
