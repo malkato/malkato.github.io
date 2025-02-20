@@ -151,7 +151,7 @@ BlIjoiYWNjZXNzIn0.' -H 'Content-Type: application/json;charset=UTF-8' --data-raw
 '{"user":{"email":"attacker@example.com","username":"attacker","bio":"asdasdasdasdasdasdas-
 daa","image":null,"password":"b9333b5*******************5b234"}}'
 ````
-• In this packet I used the earlier challenges “JAMK2025” SHA-1 password hash and by executing the
+• In this packet I used the earlier challenge's SHA-1 password hash and by executing the
 command, the flag appeared into the console:
 ````bash
 HTTP/1.1 200 OK
