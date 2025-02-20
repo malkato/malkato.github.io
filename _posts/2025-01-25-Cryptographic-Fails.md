@@ -1,6 +1,6 @@
 ---
 categories:
-- CTF
+- Schoolwork
 layout: post
 media_subpath: /assets/posts/2025-01-25-Cryptographic-Fails
 tags:
