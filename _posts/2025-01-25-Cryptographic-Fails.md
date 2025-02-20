@@ -8,9 +8,8 @@ tags:
 - Cryptographic Failures 
 title: School Tasks 1 - Web Application Security - Cryptographic Fails
 ---
-# Old Wasdat – Change user’s password by using curl
 
-## Changing user’s password with curl request.
+## Task 1A - Old Wasdat – Change user’s password by using curl
 ***Description:*** 
 
 The service accepts manipulated curl-request in order to change the password of specific user via changing the parameters of the original request. Also, the bio section must be
@@ -78,12 +77,12 @@ but I will consider it as high not critical, because attacker need to gain acces
 password to verify the author of the request or something different authetication method.
 
 
-# Task 2A: Juice Shop – Exploiting Unsigned JWT
+## Task 2A: Juice Shop – Exploiting Unsigned JWT
 
-## Forge an essentially unsigned JWT token that impersonates the (non-existing) user jwtn3d@juice-sh.op.
 
 ***Description:***
 
+Forge an essentially unsigned JWT token that impersonates the (non-existing) user jwtn3d@juice-sh.op.
 “JWT is a way to determine authorization between a user and a web server, without
 the web server needing to keep track of sessions.”, (Hacker Bartender, 2021). Another way to au-
 thenticate the client with the server.
