@@ -181,16 +181,17 @@ Access-Control-Allow-Origin: *
 ## Sources
 
 Harish, Anusha. SHA-256 vs. SHA-1: Which Is The Better Encryption?. Referenced 31.1.2025
-[link1](https://www.securew2.com/blog/what-is-sha-encryption-sha-256-vs-sha-1)
+
+[https://www.securew2.com/blog/what-is-sha-encryption-sha-256-vs-sha-1]
 
 MITRE. CWE-620 - Unverified Password Change. 19.11.2024. Referenced 31.1.2025
 
-[link1](https://cwe.mitre.org/data/definitions/620.html)
+[https://cwe.mitre.org/data/definitions/620.html]
 
 Hacker Bartender. OWASP Juice Shop – Unsigned JWT. 2.10.2021. Referenced 31.1.2025
 
-[link1](https://www.hackerbartender.com/unsigned-jwt/)
+[https://www.hackerbartender.com/unsigned-jwt/]
 
 Github. Whyiest – Juice Shop Write-up. 31.3.2024. Referenced 31.1.2025
 
-[link1](https://github.com/Whyiest/Juice-Shop-Write-up/blob/main/5-stars/unsigned_jwt.md)
+[https://github.com/Whyiest/Juice-Shop-Write-up/blob/main/5-stars/unsigned_jwt.md]
