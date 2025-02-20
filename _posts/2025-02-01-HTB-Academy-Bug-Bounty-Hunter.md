@@ -2,6 +2,8 @@
 categories:
 - CTF
 layout: post
+image:
+  path: bountyhunt.gif
 media_subpath: /assets/posts/2025-02-01-HTB-Academy-Bug-Bounty-Hunter
 tags:
 - HTBAcademy
