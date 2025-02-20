@@ -5,7 +5,7 @@ layout: post
 media_subpath: /assets/posts/2025-02-01-HTB-Academy-Bug-Bounty-Hunter
 tags:
 - HTBAcademy
-title: HTB Academy - Bug Bounty Hunter Path
+title: HTB Academy - Bug Bounty Hunter Path - (Ongoing)
 ---
 # Web Requests Module
 
