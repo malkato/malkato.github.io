@@ -1,3 +1,12 @@
+---
+categories:
+- CTF
+layout: post
+media_subpath: /assets/posts/2025-02-01-HTB-Academy-Bug-Bounty-Hunter
+tags:
+- HTBAcademy
+title: HTB Academy - Bug Bounty Hunter Path
+---
 # Web Requests Module
 
 
@@ -8,7 +17,7 @@
 
 To get the flag, start the above exercise, then use cURL to download the file returned by '/download.php' in the server shown below:
 
-![alt text](images/image.png)
+![alt text](image.png)
 
 ### HTTP/S Requests and Responses
 
@@ -27,13 +36,13 @@ To get the flag, start the above exercise, then use cURL to download the file re
 
 What is the HTTP method used while intercepting the request? (case-sensitive) : GET
 
-![webdev](images/2025-02-08-10-40-49.png)
+![webdev](2025-02-08-10-40-49.png)
 
 
 
 Send a GET request to the above server, and read the response headers to find the version of Apache running on the server, then submit it as the answer. (answer format: X.Y.ZZ): 2.4.41
 
-![apa](images/2025-02-08-10-39-01.png)
+![apa](2025-02-08-10-39-01.png)
 
 ### HTTP Headers
 *Headers will transfer information between the client and the server. Different headers are for example: General, Request, Response, Security etc. This differs, when there is a specific HTTP-method used.*
@@ -44,11 +53,11 @@ The server above loads the flag after the page is loaded. Use the Network tab in
 
 
 
-![ffa](images/2025-02-10-35.png)
+![ffa](2025-02-10-35.png)
 
 *After requesting the target website and opening the network tab in browser's developers tools, I was able to catch the flag from the response.*
 
-![flagg](images/2025-02-11-15-29-52.png)
+![flagg](2025-02-11-15-29-52.png)
 
 ### HTTP Methods
 
@@ -58,16 +67,16 @@ The server above loads the flag after the page is loaded. Use the Network tab in
 
  The exercise above seems to be broken, as it returns incorrect results. Use the browser devtools to see what is the request it is sending when we search, and use cURL to search for 'flag' and obtain the flag. 
 
- ![](images/2025-02-13-54.png)
+ ![](2025-02-13-54.png)
 
  *Developers tools shows "please use cURL" in the network section, lets do that. We need also the authorization token to retrieve any information*
 
- ![](images/2025-02-13-04.png)
+ ![](2025-02-13-04.png)
 
 
 Obtain a session cookie through a valid login, and then use the cookie with cURL to search for the flag through a JSON POST request to '/search.php' 
 
-![](images/2025-02-14-35.png)
+![](2025-02-14-35.png)
 
 ```bash
 curl -X POST -d '{"search":"flag"}' -b 'PHPSESSID=ig0kpqkqtot858cj9vflhimcde' -H 'Content-Type: application/json'  http://hackthebox:port/search.php -i
@@ -87,11 +96,11 @@ curl -X POST -d '{"search":"flag"}' -b 'PHPSESSID=ig0kpqkqtot858cj9vflhimcde' -H
 
 First, try to update any city's name to be 'flag'. Then, delete any city. Once done, search for a city named 'flag' to get the flag. 
 
-![](images/2025-02-14-12-11-21.png)
+![](2025-02-14-12-11-21.png)
 
 *Using PUT-method to update Memphis into "flag:HTB" and then deleting Baltimore. Searching for city named "flag".*
 
-![](images/2025-02-14-12-13-10.png)
+![](2025-02-14-12-13-10.png)
 
 *First module done, then to next one*
 
