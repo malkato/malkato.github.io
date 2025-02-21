@@ -111,4 +111,49 @@ First, try to update any city's name to be 'flag'. Then, delete any city. Once d
 
 > Interactive applications, which typically have frontend and backend as components. Different from static websites, these applications provide different view for each user, therefore its dynamic. Applications can run on any browser without any dependency of OS etc. Popular opensource applications are for example Wordpress and Joomla. These applications have big attack surface therefore its really important to make these secure as possible. Common vulnerabilities are SQL Injection, File Inclusion, Unrestricted File Uploads or Broken Access Control. (HTBAcademy)
 
+### HTML Injections
+
+*In some cases there are possible to inject some malicious HTML-code into a website, which allows to interact with the page itself through somekind of user input or form*
+
+````
+<!DOCTYPE html>
+<html>
+
+<body>
+    <button onclick="inputFunction()">Click to enter your name</button>
+    <p id="output"></p>
+
+    <script>
+        function inputFunction() {
+            var input = prompt("Please enter your name", "");
+
+            if (input != null) {
+                document.getElementById("output").innerHTML = "Your name is " + input;
+            }
+        }
+    </script>
+</body>
+
+</html>
+
+(Code from HTBAcademy)
+````
+*For example, here you can see that there is no sanitization in the* ***inputFunction()***
+
+***Questions:***
+
+What text would be displayed on the page if we use the following payload as our input: 
+
+````<a href="http://www.hackthebox.com">Click Me</a>````
+
+![](2025-02-21-20.png)
+![](2025-02-21-20-02.png)
+
+
+Try to use XSS to get the cookie value in the above page 
+
+![](2025-02-21-20-48.png)
+
+![](2025-02-21-20-04.png)
+
 
