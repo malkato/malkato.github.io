@@ -2,8 +2,6 @@
 categories:
 - CTF
 layout: post
-image:
-    path: Starting.gif
 media_subpath: /assets/posts/2024-12-01-THM-Advent-Day-1
 tags:
 - Basic
