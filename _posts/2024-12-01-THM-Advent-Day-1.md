@@ -36,7 +36,7 @@ Nmap done: 1 IP address (1 host up) scanned in 0.42 seconds
 
 ```
 
-Looks like we have ssh and 2 HTTP ports ports open. Following the instructions let's begin to investigate the website of the host.
+Looks like we have SSH and 2 HTTP ports ports open. Following the instructions let's begin to investigate the website of the host.
 
 ![alt text](image.png)
 
