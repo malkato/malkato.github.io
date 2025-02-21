@@ -84,8 +84,7 @@ password to verify the author of the request or something different autheticatio
 
 Forge an essentially unsigned JWT token that impersonates the (non-existing) user jwtn3d@juice-sh.op.
 “JWT is a way to determine authorization between a user and a web server, without
-the web server needing to keep track of sessions.”, (Hacker Bartender, 2021). Another way to au-
-thenticate the client with the server.
+the web server needing to keep track of sessions.”, (Hacker Bartender, 2021). Another way to authenticate the client with the server.
 
 ***Vulnerability:*** Target supports none-algorithm.
 
