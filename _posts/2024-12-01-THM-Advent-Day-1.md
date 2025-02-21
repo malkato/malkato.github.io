@@ -44,7 +44,7 @@ We landed this kind of page which is a YouTube converter. Let's try to convert a
 
 ![alt text](image-1.png)
 
-We ended up getting an archive called ````download.zip```` These files might contain some information.
+We ended up getting an archive called ````download.zip```` these files might contain some information.
 
 ````
 root@tryhackmeuser:~/Desktop# file somg.mp3
