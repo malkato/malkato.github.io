@@ -1,6 +1,6 @@
 ---
 categories:
-- CTF
+- Schoolwork
 layout: post
 media_subpath: /assets/posts/2024-03-20-CTF-Challenge
 tags:
