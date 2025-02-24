@@ -7,18 +7,17 @@ tags:
 - Basic
 title: CTF - Challenges - School
 ---
-# Challenge 1
+## Challenge 1
 
-</br>
 
  At the start of the challenge we were given few files to examinate.
 
 
-</br>
+
 
 ![](ch01_1.png)
 
-## Here are the hints
+*Here are the hints*
 * Programming: Filter out the bad stuff
 
 * Cyber: What is a mirror?
@@ -27,18 +26,20 @@ title: CTF - Challenges - School
 
 * Networking: No hint. Extra points for fully understanding the content
 
-</br>
 
-### Solving media.txt:
+
+**Solving media.txt:**
+
 This chunk of text seems to be in Base64 format so lets try to convert it.
 ![](chunktext2.png)
 Output of the conversion was total nonsense but by using the hint there was a recipe in Cyberchef to convert this from Base64 and rendering the output as an image. Therefore i was able to pickup the first flag.
 
 ![](ch01_2.png)
 
-</br>
 
-### 2. cyber.txt:
+
+**2. cyber.txt:**
+
 Let´s try to convert this from Base64
 ```bash
 dW96dHs4dHhzRGswemtSejlVZ3B9
@@ -54,11 +55,11 @@ By entering this string to Affine cipher and bruteforcing alphabets i was able t
 flag{8gchWp0apIa9Ftk}
 ```
 
-</br>
 
-# Challenge 2
 
-</br>
+## Challenge 2
+
+
 
  In this challenge I will need to complete atleast 2 out of 3 to proceed further. I choose to begin with the 1st option.
 
@@ -76,7 +77,7 @@ Both Strings and Binwalk did not give any valuable information
 
 ![](ch02_9.png)
 
-## Bruteforcing
+### Bruteforcing
 Finally i extracted the archive´s hash with zip2john and ran john with wordlist "rockyou". Password was cracked right away: "topsecret1"
 
 ![](ch02_10.png)
@@ -92,11 +93,11 @@ By using cyberchef i obtained the flag by decoding the string in Base64
 flag{mBULPXy3ZdKYaNw}
 ````
 
-</br>
+
 
 ### Challenge 2/3
 
-XML file which had both request and response encoded in Base64. By decoding both i was able to read what plaintext contained. One line in response was kinda obvious that this might be the solution.
+>XML file which had both request and response encoded in Base64. By decoding both i was able to read what plaintext contained. One line in response was kinda obvious that this might be the solution.
 
 ![](ch02_15.png)
 
@@ -106,7 +107,7 @@ After decoding this string the answer was there.
 flag{sLpufQN9MK9x7Cb}
 ``````
 
-</br>
+
 
 ### Challenge 3/3
 
@@ -146,7 +147,7 @@ It seems to have soundwaves maybe spectrogram gives an answer? :)
 
 ### Conclusion
 
-Funny part is that my kali´s sound settings were somehow off and i didnt hear anything in this file. Now i downloaded the file to windows and found the flag :D
+Funny part is that my kali´s sound settings were somehow off and i didnt hear anything in this file. Now i downloaded the file to windows and found the flag.
 
 ``````bash
 flag{nopeitisnot}
@@ -154,7 +155,7 @@ flag{nopeitisnot}
 Last flag by changing two flags into binary and then bitwise XOR to hexadecimal.
 ![](chunktext.png)
 
-# Challenge 3
+## Challenge 3
 By looking the Javascript code inside the game provided for this challenge, i quickly noticed that there is a function which does not do anything for the game itself. This doGravity function combines 3 strings which includes myID, gravStr/Mod and another string. By adding these together it will produce a encoded text in Base64. Via decoding it will reveal the flag.
 
 ![](ch03_1.png)
@@ -165,9 +166,9 @@ myID = (Zmx) + myGamePiece.gravStr(hZ3tqS1g0R) + EZWRExkOHI2REN9
 ```bash 
 flag{jKX4DFVDLd8r6DC}
 ```
-</br>
 
-# Challenge 4 - Challenger 
+
+## Challenge 4 - Challenger 
 
 Wordpress site which belongs to somekind of software company.
 
@@ -193,9 +194,9 @@ flag{7pzcgyRF9r8wZJp}
 ``````
 Here it was :)
 
-</br>
 
-# Challenge 5 - Phishing email
+
+## Challenge 5 - Phishing email
 
 For this challenge there are two files to start with. I chose to start with the first one which had all the information what the email had which was send to IT-department from IT-department :))
 
