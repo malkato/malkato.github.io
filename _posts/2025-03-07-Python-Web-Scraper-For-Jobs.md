@@ -18,7 +18,7 @@ title: Webscraping Script For Jobs - Python
 ![](2025-03-07-22-55.png)
 
 
-````bash
+````
 import json
 import requests
 from bs4 import BeautifulSoup
