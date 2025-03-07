@@ -14,8 +14,8 @@ title: Webscraping Script For Jobs - Python
 
 *This script is scraping from Duunitori.fi website for any latest positions in the IT-sector and saving the data into local JSON-file. It has a cute GUI, where you have options to manually fetch the data or set a automated schechuled fetching. The button for deleting whole data was for debugging purposes. I have some ideas for later development.*
 
-![](images/2025-03-07-22-33.png)
-![](images/2025-03-07-22-55.png)
+![](2025-03-07-22-33.png)
+![](2025-03-07-22-55.png)
 
 
 ````bash
