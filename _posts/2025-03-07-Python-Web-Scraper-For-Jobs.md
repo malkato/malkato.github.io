@@ -12,7 +12,9 @@ title: Webscraping Script For Jobs - Python
 
 *During my time applying for jobs, I got a headache for looking everyday any new open positions. Therefore it was good time to ask from ChatGPT to help me to build this script. Just for fun. It´s not great at all and I am not a good developer but ideas came into my mind so I decided to do it anyways.*
 
-*This script is scraping from Duunitori.fi website for any latest positions in the IT-sector and saving the data into local JSON-file. It has a cute GUI, where you have options to manually fetch the data or set a automated schechuled fetching. The button for deleting whole data was for debugging purposes. I have some ideas for later development.*
+*This script is scraping from Duunitori.fi website for any latest positions in the IT-sector and saving the data into local JSON-file. It has a cute GUI, where you have options to manually fetch the data or set a automated scheduled fetching. The button for deleting whole data was for debugging purposes. I have some ideas for later development.*
+
+*Scheduled timer is now each 30 minutes and needs to be changed from the code at the moment. There will be also colored output in the list for specific roles and cities. Now Trainee, Support and Jyväskylä's roles are in green, which are most interesting ones.*
 
 ![](2025-03-07-22-33.png)
 ![](2025-03-07-22-55.png)
