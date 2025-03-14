@@ -17,9 +17,6 @@ title: Linux - Infrastructure Services - School
 
 This document presents the laboratory work for the Linux Infrastructure Services course. The course is part of the Systems Maintenance module.
 
-# Theory
-
-##  
 
 # Lab 1
 
