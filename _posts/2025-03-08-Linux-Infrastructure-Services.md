@@ -7,7 +7,7 @@ tags:
 - Basic
 title: Linux - Infrastructure Services - School
 ---
-*This document is converted from docx to md with pandoc. With this command* 
+*This document is converted from docx to md with pandoc using this command* 
 
 ````pandoc -s input.docx --wrap=none -t gfm --extract-media=images -o output.md````
 
