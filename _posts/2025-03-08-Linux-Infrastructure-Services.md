@@ -7,6 +7,14 @@ tags:
 - Basic
 title: Linux - Infrastructure Services - School
 ---
+*This document is converted from docx to md with pandoc. With this command* 
+
+````pandoc -s input.docx --wrap=none -t gfm --extract-media=images -o output.md````
+
+*Copilot handled the translation of the whole document.*
+
+
+
 # Topology
 
 <img src="image3.png" style="width:6.69375in;height:4.39722in" alt="Random alt text 1" />
