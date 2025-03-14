@@ -208,7 +208,7 @@ The sendmail command is a general interface supported by different MTAs (Mail Tr
 
 <img src="image33.png" style="width:6.69375in;height:6.82083in" alt="Random alt text 31" />
 
-Figure Dig "Lookout.vle.fi"
+Figure Dig "vle.fi"
 
 The command produces a result from the DNS registry for the mail relay server address because the parameter "MX" is used. (Figure 31).
 
