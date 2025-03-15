@@ -13,6 +13,11 @@ title: Linux - Infrastructure Services - School
 
 *Copilot handled the translation of the whole document.*
 
+# Introduction
+
+This document presents the laboratory work for the Linux Infrastructure Services course. The course is part of the Systems Maintenance module.
+
+
 
 
 # Topology
@@ -21,9 +26,7 @@ title: Linux - Infrastructure Services - School
 
 <span id="_Toc190694245" class="anchor"></span>Figure 1 VLE Laboratory Environment Topology Image
 
-# Introduction
 
-This document presents the laboratory work for the Linux Infrastructure Services course. The course is part of the Systems Maintenance module.
 
 
 # Lab 1
