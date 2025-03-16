@@ -10,15 +10,18 @@ tags:
 title: Windows Domain Administration - School
 ---
 
+## Introduction
+
+This document presents the laboratory work for the Windows Domain Administration course. The course is part of the Systems Maintenance module.
+
+
+
+
 ## Topology
 
 <img src="image3.png" style="width:6.69375in;height:4.39722in" alt="random string" />
 
 <span id="_Toc192421661" class="anchor"></span>Figure 1 VLE Laboratory Environment Topology
-
-## Introduction
-
-This document presents the laboratory work for the Windows Domain Administration course. The course is part of the Systems Maintenance module.
 
 ## Theory
 
