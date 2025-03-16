@@ -13,14 +13,14 @@ title: Linux - Infrastructure Services - School
 
 *Copilot handled the translation of the whole document.*
 
-# Introduction
+## Introduction
 
 This document presents the laboratory work for the Linux Infrastructure Services course. The course is part of the Systems Maintenance module.
 
 
 
 
-# Topology
+## Topology
 
 <img src="image3.png" style="width:6.69375in;height:4.39722in" alt="Random alt text 1" />
 
@@ -29,7 +29,7 @@ This document presents the laboratory work for the Linux Infrastructure Services
 
 
 
-# Lab 1
+## Lab 1
 
 In the first laboratory exercise, packages supporting the Nextcloud service are installed on a server named "Cloud" in the VLE environment. Additionally, the Apache service is configured and started.
 
@@ -79,7 +79,7 @@ Apache searches the content in numerical order, and this format is a good genera
 
 In the path "/var/log/httpd/error_log & /access_log". (Linux.fi, 2023)
 
-# Lab 2
+## Lab 2
 
 In this lab, extensions for PHP are installed and directories for Nextcloud are configured for SELinux.
 
@@ -143,7 +143,7 @@ The Nextcloud user did not have permissions to the "nextcloud" database, so I ha
 
 **Why is regex important in file paths? (/.*) ?** This ensures that changes within the specified path do not affect anything, as regex ensures that any file within the specified path belongs to that definition.
 
-# Lab 3
+## Lab 3
 
 In this lab exercise, LDAP authentication is configured for the NextCloud server installed in the previous lab.
 
@@ -191,7 +191,7 @@ Figure Login with user "Sales01"
 
 Login was also successful to Nextcloud with the user (Figure 26).
 
-# Lab 4
+## Lab 4
 
 In this lab, a mail relay server is installed on the SMTP server.
 
@@ -239,7 +239,7 @@ Set the SMTP server address in the test field, and the message was successfully 
 
 Figure Received email
 
-# Sources
+## Sources
 
 Das, Anwesha. 2020. Difference between chcon and semanage. Blog. Accessed 17.2.2025.  
 <https://anweshadas.in/difference-between-chcon-and-semanage/>

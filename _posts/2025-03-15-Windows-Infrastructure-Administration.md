@@ -8,12 +8,12 @@ tags:
 title: Windows Infrastructure Administration
 ---
 
-# Introduction
+## Introduction
 
 *This document presents the laboratory exercises for the Windows Infrastructure Administration course. The course is part of the Systems Maintenance module.*
 
 
-# Topology
+## Topology
 
 <img src="images/media/image3.png" style="width:6.69375in;height:4.39722in" alt="Random alt text 1" />
 
@@ -21,7 +21,7 @@ title: Windows Infrastructure Administration
 
 
 
-# Theory
+## Theory
 
 ## Windows Server
 
@@ -39,7 +39,7 @@ Windows Server Update Services is a server feature developed by Microsoft that d
 
 Windows Admin Center is a graphical web-based management service where maintenance and monitoring tasks can be performed for Windows servers and clusters. These tasks include monitoring events, logs, and performance. Azure integration features and essentially the same features offered by Windows Server Manager are also available in Admin Center. (Katie, 2023)
 
-# Lab 1
+## Lab 1
 
 In this laboratory exercise, a Failover Cluster and DHCP are configured. Their functionality is tested on the WS-01 endpoint.
 
@@ -149,7 +149,7 @@ Add a reservation to DHCP for the specific physical address (MAC) (Figure 19).
 
 When FO1 is shut down (Figure 24), WS01 received the address through FO2 (Figure 25).
 
-# Lab 2
+## Lab 2
 
 In this lab, we create file shares related to FO1 & FO2.
 
@@ -191,7 +191,7 @@ Using a similar command structure: `New-SmbShare -Name "MyDocs" -Path "C:\Users\
 **What is File Server Resource Manager and why is it useful?**  
 This management tool in Windows Server allows for the sharing of resources and their access rights conveniently within a domain. These resources include, for example, sharing storage space from an external ISCSI storage server or utilizing the resources of the Windows Server itself. Management can also limit how much certain user groups can use disk space.**
 
-# Lab 3
+## Lab 3
 
 In this lab exercise, WSUS (Windows Server Update Services) is installed, which I am already familiar with from the Cyber Defense module. Cluster updating is also implemented.
 
@@ -256,7 +256,7 @@ For some reason, WSUS crashed and I reinstalled it because it no longer responde
 **How do you update Failover servers with minimal downtime?**  
 Using the Cluster-Aware Updating (CAU) feature. This allows for nearly downtime-free updating in clusters. (Perplexity, 2025)
 
-# Lab 4
+## Lab 4
 
 In this lab exercise, we explore Windows Admin Center from the workstation WS01.
 
@@ -311,7 +311,7 @@ With Azure backup, the functionality of the environment could be ensured, as the
 **How does Admin Center differ from Server Manager and why is it useful?**  
 From my perspective, Admin Center simplifies and expands the features of Server Manager conveniently. It brings Azure features and endpoint management into the same package, making maintenance significantly easier than with Server Manager. Tasks can be handled in Admin Center but more straightforwardly, making it a much better environment.**
 
-# References
+## References
 
 ChatGPT. 2025. Question: “How to create shares with PowerShell? in windows server”. Accessed 12.3.2025
 
