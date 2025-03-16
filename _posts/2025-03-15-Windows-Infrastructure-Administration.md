@@ -3,7 +3,7 @@ categories:
 - School
 layout: post
 image:
-    path: windows.gif
+    path: images/media/windows.gif
 media_subpath: /assets/posts/2025-03-15-Windows-Infra
 tags:
 - Schoolwork

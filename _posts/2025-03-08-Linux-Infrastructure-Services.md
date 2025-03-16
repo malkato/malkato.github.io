@@ -3,7 +3,7 @@ categories:
 - Schoolwork
 layout: post
 image:
-    path: linux.gif
+    path: Linux.gif
 media_subpath: /assets/posts/2025-03-08-Linux-Infra
 tags:
 - Basic
