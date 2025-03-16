@@ -7,7 +7,7 @@ image:
 media_subpath: /assets/posts/2025-03-15-Windows-Infra
 tags:
 - Schoolwork
-title: Windows Infrastructure Administration
+title: Windows - Infrastructure Administration - School
 ---
 
 ## Introduction

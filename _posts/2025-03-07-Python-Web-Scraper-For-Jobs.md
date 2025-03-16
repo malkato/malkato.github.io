@@ -8,7 +8,7 @@ media_subpath: /assets/posts/2025-03-07-Python-Web-Scraper-For-Jobs
 tags:
 - Basic
 - Python
-title: Webscraping Script For Jobs - Python
+title: Python - Webscraping Script For Jobs
 ---
 
 
