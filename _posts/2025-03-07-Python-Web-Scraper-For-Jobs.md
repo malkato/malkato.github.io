@@ -2,6 +2,8 @@
 categories:
 - Scripting
 layout: post
+image:
+    path: python.png
 media_subpath: /assets/posts/2025-03-07-Python-Web-Scraper-For-Jobs
 tags:
 - Basic
