@@ -311,7 +311,7 @@ With Azure backup, the functionality of the environment could be ensured, as the
 **How does Admin Center differ from Server Manager and why is it useful?**  
 From my perspective, Admin Center simplifies and expands the features of Server Manager conveniently. It brings Azure features and endpoint management into the same package, making maintenance significantly easier than with Server Manager. Tasks can be handled in Admin Center but more straightforwardly, making it a much better environment.**
 
-## References
+## Sources
 
 ChatGPT. 2025. Question: “How to create shares with PowerShell? in windows server”. Accessed 12.3.2025
 
