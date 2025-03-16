@@ -1,6 +1,6 @@
 ---
 categories:
-- School
+- Schoolwork
 layout: post
 image:
     path: images/media/windows.gif
