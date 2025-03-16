@@ -2,6 +2,8 @@
 categories:
 - Schoolwork
 layout: post
+image:
+  path: hacking.png
 media_subpath: /assets/posts/2024-03-20-CTF-Challenge
 tags:
 - Basic

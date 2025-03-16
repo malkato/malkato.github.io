@@ -2,6 +2,8 @@
 categories:
 - Schoolwork
 layout: post
+image:
+  path: hacking.png
 media_subpath: /assets/posts/2025-01-25-Cryptographic-Fails
 tags:
 - JWT
