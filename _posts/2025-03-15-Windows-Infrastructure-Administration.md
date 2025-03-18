@@ -51,7 +51,7 @@ First, both Failover servers are joined to the domain created in the Windows Dom
 
 <img src="images/media/image4.png" style="width:6.69375in;height:4.39757in" alt="Random alt text 2" />
 
-<span id="_Toc192934775" class="anchor"></span>Figure FO2 as part of AA4961 domain
+<span id="_Toc192934775" class="anchor"></span>Figure FO2 as part of studentid domain
 
 <img src="images/media/image5.png" style="width:6.69375in;height:2.75347in" alt="Random alt text 3" />
 
