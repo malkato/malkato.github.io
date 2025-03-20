@@ -5,7 +5,7 @@ categories:
 - Fundamentals
 layout: post
 image:
-    path: images/media/python.png
+    path: python.png
 media_subpath: /assets/posts/2025-03-20-Python-CodeWars
 tags:
 - Python
