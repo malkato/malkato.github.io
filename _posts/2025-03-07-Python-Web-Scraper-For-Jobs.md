@@ -1,6 +1,7 @@
 ---
 categories:
 - Scripting
+- Freetime
 layout: post
 image:
     path: python.png
