@@ -18,7 +18,7 @@ Got an email about this challenge. Message contained following: "Got 10 minutes?
 
 ## Solution
 
-![](images/2025-03-28-18-58.png)
+![](2025-03-28-18-58.png)
 
 Let's start my ParrotOS to dig deeper of this.
 
@@ -31,11 +31,11 @@ PORT   STATE SERVICE
 80/tcp open  http
 ````
 
-![](images/2025-03-28-19-59.png)
+![](2025-03-28-19-59.png)
 
 Really interesting, that there is actually a dashboard to this platform with authenticated "Admin" user. While clicking each link in the site, eventually I ended up to similar site but different user logged in. 
 
-![](images/2025-03-28-19-21.png)
+![](2025-03-28-19-21.png)
 
 At first I thought could there be a session token in the storage but there was not.
 Any of the links in the website did not respond into any actions, so I did another Nmap scan with parameter "-A" to entirely scan the host. 
@@ -86,7 +86,7 @@ else:
 
 As expected, we ended up getting a shell using this exploit.
 
-![](images/2025-03-28-19-14.png)
+![](2025-03-28-19-14.png)
 
 I wanted a better shell and started a netcat listener on Parrot's end but the simple reverse shell commands did not work on this host. MSFVenom could solve this problem.
 ````
