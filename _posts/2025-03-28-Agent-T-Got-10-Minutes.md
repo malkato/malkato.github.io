@@ -5,7 +5,7 @@ categories:
 - Fundamentals
 layout: post
 image:
-    path: python.png
+    path: hacking.png
 media_subpath: /assets/posts/2025-03-28-Agent-T-Got-10-Minutes
 tags:
 - CTF
