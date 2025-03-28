@@ -16,6 +16,7 @@ title: TryHackMe - Got 10 minutes? - Agent T
 
 Got an email about this challenge. Message contained following: "Got 10 minutes? Try to find out what is wrong with the server" 
 
+## Solution
 
 ![](images/2025-03-28-18-58.png)
 
