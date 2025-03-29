@@ -17,7 +17,7 @@ title: THM - Starters - Pickle Rick
 
 **A Rick and Morty CTF. Help turn Rick back into a human!**
 
-![](images/2025-03-29-11-13.png)
+![](2025-03-29-11-13.png)
 
 
 ## Enumeration
@@ -37,12 +37,12 @@ PORT   STATE SERVICE VERSION
 As said in the instructions, I will dig deeper in to the web application of this server. 
 
 
-![](images/2025-03-29-11-28.png)
+![](2025-03-29-11-28.png)
 
 Repeating the words "Burp" assuming this is a reference of the webtesting tool called Burpsuite.
 There was also some gibberish in the /robots.txt file and a username stored in the sourcecode in a comment. This username could be used for bruteforcing the SSH with Hydra. There was no exploits in the Metasploit Framework for this version of Apache (2.4.41).
 
-![](images/2025-03-29-11-40.png)
+![](2025-03-29-11-40.png)
 
 ````
   <!--
@@ -63,29 +63,29 @@ SSH-service did not have password authentication on, so I cannot proceed further
 Let's check if there is any other directories available with Dirb.
 
 ````
----- Scanning URL: http://10.10.242.190/ ----
+---- Scanning URL: http://10.x.x.x/ ----
 ==> DIRECTORY: 
-+ http://10.10.242.190/assets/                                                                         
-+ http://10.10.242.190/index.html                                                           
-+ http://10.10.242.190/robots.txt                                                            
-+ http://10.10.242.190/login.php
-+ http://10.10.242.190/server-status
++ http://10.x.x.x/assets/                                                                         
++ http://10.x.x.x/index.html                                                           
++ http://10.x.x.x/robots.txt                                                            
++ http://10.x.x.x/login.php
++ http://10.x.x.x/server-status
 ````
 
 The login.php seems to be the right way to use that username.
 
-![](images/2025-03-29-11-58.png)
+![](2025-03-29-11-58.png)
 
 Using the username "R1ckRul3s" and string found from /robots.txt, I was able to gain access to this portal.
 
-![](images/2025-03-29-11-26.png)
+![](2025-03-29-11-26.png)
 
 It seems you can now access to the backend server and execute commands. "ls": 
 
-![](images/2025-03-29-11-01.png)
+![](2025-03-29-11-01.png)
 
 This page supports PHP, now I want to gain a better shell. By using PHP-shell command I was able to grab a session with netcat.
-![](images/2025-03-29-11-25.png)
+![](2025-03-29-11-25.png)
 ````
 $ ls
 Sup3rS3cretPickl3Ingred.txt
