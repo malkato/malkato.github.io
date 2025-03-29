@@ -1,15 +1,16 @@
 ---
 categories:
 - Tryhackme
-- Freetime
-- Fundamentals
+- CTF
 layout: post
 image:
     path: hacking.png
 media_subpath: /assets/posts/2025-03-28-Agent-T-Got-10-Minutes
 tags:
 - CTF
-title: TryHackMe - Got 10 minutes? - Agent T
+- Fundamentals
+- Tryhackme
+title: THM - Got 10 minutes? - Agent T
 ---
 
 ## Introduction
