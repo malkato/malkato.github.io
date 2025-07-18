@@ -36,3 +36,10 @@ sudo apt install influxdb telegraf grafana
 ![](/2025-07-18-21-41.png)
 
 
+*Or via command line like this*
+````
+uci set system.@system[0].log_ip='192.168.1.100'  # Grafana IPv4 address
+uci set system.@system[0].log_port='514'          # Port number
+uci commit system
+/etc/init.d/log restart
+````
