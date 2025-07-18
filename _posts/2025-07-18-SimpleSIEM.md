@@ -12,7 +12,7 @@ title: Homelab - Testing Lightweight Stack SIEM
 
 ## Introduction
 
-![alt](2025-07-18-21-29.png)
+![alt](/2025-07-18-21-29.png)
 
 *This project started from a small curiosity. I was casually checking the logs on my OpenWrt router (while using BanIP), and I noticed that there's a surprising amount of traffic hitting my router — way more than I expected. It got me wondering: where is all this traffic coming from, and what kind of IP addresses are trying to reach my device?*
 
