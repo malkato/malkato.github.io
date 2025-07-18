@@ -12,7 +12,7 @@ title: Homelab - Testing Lightweight Stack SIEM
 
 ## Introduction
 
-![alt](/assets/posts/2025-07-18-SimpleSIEM/2025-07-18-21-29.png)
+![alt](2025-07-18-21-29.png)
 
 *This project started from a small curiosity. I was casually checking the logs on my OpenWrt router (while using BanIP), and I noticed that there's a surprising amount of traffic hitting my router — way more than I expected. It got me wondering: where is all this traffic coming from, and what kind of IP addresses are trying to reach my device?*
 
@@ -33,6 +33,6 @@ sudo apt install influxdb telegraf grafana
 
 *It's pretty straightforward to set up log forwarding from your OpenWrt router. You just need to point the logs to the correct IP address of your log receiver (e.g., your PC or server), make sure the destination port is open and available, and then choose UDP as the protocol for sending logs. Once that's set, your router will start forwarding logs in real-time to the target system. Picture from the system settings as an example.*
 
-![](../assets/posts/2025-07-18-SimpleSIEM/2025-07-18-21-41.png)
+![](/2025-07-18-21-41.png)
 
 
