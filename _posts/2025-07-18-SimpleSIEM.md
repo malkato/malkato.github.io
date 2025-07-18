@@ -20,6 +20,8 @@ title: Homelab - Testing Lightweight Stack SIEM
 
 *It’s not a huge setup, but it gives me a hands-on way to learn more about the traffic flows around my router and build a simple yet useful traffic analysis system.*
 
+*Tips: If you are too tired to write things down, just use AI to literature your own thoughts or instructions and paste them here.*
+
 ### Installation
 
 *Updating the Linux subsystem for Windows and installing the necessary programs (influxdb, telegraf and grafana)*
@@ -29,5 +31,8 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install influxdb telegraf grafana
 ````
 
+*It's pretty straightforward to set up log forwarding from your OpenWrt router. You just need to point the logs to the correct IP address of your log receiver (e.g., your PC or server), make sure the destination port is open and available, and then choose UDP as the protocol for sending logs. Once that's set, your router will start forwarding logs in real-time to the target system. Picture from the system settings as an example.*
+
+![](../assets/posts/2025-07-18-SimpleSIEM/2025-07-18-21-41.png)
 
 
