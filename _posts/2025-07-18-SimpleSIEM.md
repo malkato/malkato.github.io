@@ -4,7 +4,7 @@ categories:
 layout: post
 image:
   path: hacking.png
-media_subpath: /assets/posts/2025-07-18-SimpleSIEM
+media_subpath:
 tags:
   - Experiencing
 title: Homelab - Testing Lightweight Stack SIEM
@@ -12,7 +12,7 @@ title: Homelab - Testing Lightweight Stack SIEM
 
 ## Introduction
 
-![alt](/2025-07-18-21-29.png)
+![alt](\assets\posts\2025-07-18-SimpleSIEM\2025-07-18-21-29.png)
 
 *This project started from a small curiosity. I was casually checking the logs on my OpenWrt router (while using BanIP), and I noticed that there's a surprising amount of traffic hitting my router — way more than I expected. It got me wondering: where is all this traffic coming from, and what kind of IP addresses are trying to reach my device?*
 
@@ -33,7 +33,7 @@ sudo apt install influxdb telegraf grafana
 
 *It's pretty straightforward to set up log forwarding from your OpenWrt router. You just need to point the logs to the correct IP address of your log receiver (e.g., your PC or server), make sure the destination port is open and available, and then choose UDP as the protocol for sending logs. Once that's set, your router will start forwarding logs in real-time to the target system. Picture from the system settings as an example.*
 
-![](/2025-07-18-21-41.png)
+![](\assets\posts\2025-07-18-SimpleSIEM\2025-07-18-21-41.png)
 
 
 *Or via command line like this*
@@ -43,3 +43,23 @@ uci set system.@system[0].log_port='514'          # Port number
 uci commit system
 /etc/init.d/log restart
 ````
+
+*Install the necessary dependencies for Linux (You might need to add the correct repositories for installing these):* 
+````
+sudo apt install influxdb grafana telegraf
+````
+
+*Configure the telegraf (Use nano and CTRL+Q to find the right line):*
+````
+[[inputs.syslog]]
+  server = "udp://:514"
+  best_effort = true
+  data_format = "grok"
+  grok_patterns = ["%{SYSLOGTIMESTAMP:timestamp} %{SYSLOGHOST:hostname} %{DATA:program}(?:\\[%{POSINT:pid}\\])?: %{GREEDYDATA:message}"]
+````
+![](../assets/posts/2025-07-18-SimpleSIEM/2025-07-19-23-34.png)
+![](../assets/posts/2025-07-18-SimpleSIEM/2025-07-19-23-01.png)
+
+Also configure the influxdb outputs:
+
+![](../assets/posts/2025-07-18-SimpleSIEM/2025-07-19-23-30.png)
