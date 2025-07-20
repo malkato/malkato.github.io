@@ -32,7 +32,7 @@ curl https://raw.githubusercontent.com/fluent/fluent-bit/master/install.sh | sh 
 ````
 *It's pretty straightforward to set up log forwarding from your OpenWrt router. You just need to point the logs to the correct IP address of your log receiver (e.g., your PC or server), make sure the destination port is open and available, and then choose UDP as the protocol for sending logs. Once that's set, your router will start forwarding logs in real-time to the target system. Picture from the system settings as an example.*
 
-![](../assets/posts/2025-07-18-SimpleSIEM/2025-07-18-21-41.png)
+![](2025-07-18-21-41.png)
 
 *Or via command line like this*
 ````
@@ -114,23 +114,23 @@ sudo systemctl status grafana-server --- Just to make sure its enabled, otherwis
 
 **Database name and HTTP method either GET or POST, later you can enable authentication and setup user and password**
 
-![](../assets/posts/2025-07-18-SimpleSIEM/2025-07-20-12-27.png)
+![](2025-07-20-12-27.png)
 
 *Create a new dashboard:*
 
-![](../assets/posts/2025-07-18-SimpleSIEM/2025-07-20-21-48.png)
+![](2025-07-20-21-48.png)
 
 *Select the Influxdb as datasource and set Mixed:*
 
-![](../assets/posts/2025-07-18-SimpleSIEM/2025-07-20-21-25.png)
+![](2025-07-20-21-25.png)
 
 *Edit the query and input this to see any data in the database:*
 ````
 SELECT "message" FROM "syslog" ORDER BY time DESC LIMIT 100
 ````
 
-![](../assets/posts/2025-07-18-SimpleSIEM/2025-07-20-21-47.png)
+![](2025-07-20-21-47.png)
 
 *When the Grafana refreshes shortly after, logs should appear in to the table*
 
-![](../assets/posts/2025-07-18-SimpleSIEM/2025-07-20-21-58.png)
+![](2025-07-20-21-58.png)
