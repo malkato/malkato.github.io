@@ -4,6 +4,7 @@ categories:
 layout: post
 image:
   path: hacking.png
+media_subpath: /assets/posts/2025-07-18-SimpleSIEM/
 tags:
   - Experiencing
 title: Homelab - Testing Lightweight Stack SIEM
