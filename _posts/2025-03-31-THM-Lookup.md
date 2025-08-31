@@ -75,7 +75,7 @@ There was a great enumeration Python-script for this website, which detects from
 
 By modifying this script to use my wordlist and not informing about invalid requests, I was able to catch two usernames of the server. "admin" was found earlier in the section, where I tried to inject the SQL-commands into the form. Bruteforcing tool called Hydra could now break the password using these usernames.
 
-![](images/2025-04-04-14-28.png)
+![](2025-04-04-14-28.png)
 
 Hydra : 
 
@@ -85,29 +85,29 @@ User "admin" took a lot of attempts and did not result in successful login, so I
 hydra -l jose -P /usr/share/wordlists/rockyou.txt lookup.thm http-post-form "/login.php:username=^USER^&password=^PASS^:invalidpass" -V
 ````
 
-![](images/2025-04-04-14-56.png)
+![](2025-04-04-14-56.png)
 
 In order to access to the redirected site, the subdomain had to add to the /etc/hosts file.
 
 
-![](images/2025-04-04-14-02.png)
+![](2025-04-04-14-02.png)
 
 This service is called elFinder and Exploit Database has a exploit for this exact version, which can be used to gain a shell for this machine. It uses command injection vulnerability in the PHP connector to deliver the payload in to the target.
 
 [https://www.exploit-db.com/exploits/46481](https://www.exploit-db.com/exploits/46481)
 
-![](images/2025-04-04-14-20.png)
-![](images/2025-04-04-14-47.png)
+![](2025-04-04-14-20.png)
+![](2025-04-04-14-47.png)
 
 Metasploit Framework has also an exploit for this. Let's use it. s
 
-![](images/2025-04-04-15-54.png)
+![](2025-04-04-15-54.png)
 
 At first I had a lot of problems not getting the shell but the localhost settings were invalid and therefore the shell could not establish any connection. By changing it to my VPN-tunnel address I was able to gain a meterpreter shell.
 
-![](images/2025-04-04-15-59.png)
+![](2025-04-04-15-59.png)
 
-![](images/2025-04-04-15-03.png)
+![](2025-04-04-15-03.png)
 
 Meterpreter shows that we are now logged into "www-data", which usually does not have a lot of privileges on the system.
 
@@ -125,4 +125,4 @@ Meterpreter shows that we are now logged into "www-data", which usually does not
 ````
 Listing all the files, which have other privileges. "/usr/sbin/pwm" executes id command to extract username and user ID. It attempts to read the extracted user's ".password" file. Because the id command is not using the absolute $PATH, this can be manipulated to use our own malicious code. This is called Path Hijacking. Below screenshot shows, that there is bash syntax inserted into /tmp/id file and changing the file into executable. This path is then exported to $PATH-variable. Now the "pwm" is outputting the user think's .password file.
 
-![](images/2025-04-04-15-06.png)
+![](2025-04-04-15-06.png)
