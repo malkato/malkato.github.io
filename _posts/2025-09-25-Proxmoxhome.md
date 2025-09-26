@@ -32,7 +32,7 @@ From there, curiosity grew dramatically. One node wasn’t enough. I wanted to s
 
 ## Current Setup
 
-### Proxmox Cluster (3 nodes currently, 4th arriving soon)
+### Proxmox Cluster (4 nodes currently)
 - **Node 1**: Dell Latitude E5550 → running HAOS  
 - **Node 2**: Fujitsu Esprimo → running Wazuh (will be migrated)  
 - **Node 3**: HP Prodesk (Newest Node)
