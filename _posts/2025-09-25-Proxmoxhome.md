@@ -4,7 +4,7 @@ categories:
 layout: post
 image:
   path: hacking.png
-media_subpath: /assets/posts/2025-09-2025-Proxmoxhome/
+media_subpath: /assets/posts/2025-09-25-Proxmoxhome/
 tags:
   - Experiencing
   - Freetime
@@ -15,7 +15,7 @@ title: Homelab - Proxmox Cluster + Portainer
 
 ## Topology
 
-
+![](2025-09-26-18-48-31.png)
 
 ## Story
 
@@ -32,8 +32,6 @@ From there, curiosity grew dramatically. One node wasn’t enough. I wanted to s
 
 
 ## Current Setup
-
-![](2025-09-26-18-48-31.png)
 
 ### Proxmox Cluster (3 nodes currently, 4th arriving soon)
 - **Node 1**: Dell Latitude E5550 → running HAOS  
@@ -78,16 +76,7 @@ It was a reminder of how these homelab projects often go — you learn by trippi
 
 ## Next Plans
 - Add OPNsense firewall next week.  
-- Add Node 4 to cluster.  
-- Tablet integration with HAOS → for dashboards, to-do lists, etc.  
+- Tablet integration with HAOS → for dashboards, to-do lists, etc. 
+- Playing around with this environment and implementing new ideas 
 
-
-## Links to all current technologies used in the lab
-[https://www.proxmox.com/en/](https://www.proxmox.com/en/)
-
-[https://www.influxdata.com/](https://www.influxdata.com/)
-
-[https://www.portainer.io/](https://www.portainer.io/)
-
-[https://wazuh.com/](https://wazuh.com/)
 
