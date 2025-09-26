@@ -4,7 +4,7 @@ categories:
 layout: post
 image:
   path: hacking.png
-media_subpath: /assets/posts/2025-09-25-Proxmoxhome/
+media_subpath: /assets/posts/2025-09-25-Proxmoxhome
 tags:
   - Experiencing
   - Freetime
