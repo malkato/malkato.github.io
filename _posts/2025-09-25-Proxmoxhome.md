@@ -36,7 +36,7 @@ From there, curiosity grew dramatically. One node wasn’t enough. I wanted to s
 - **Node 1**: Dell Latitude E5550 → running HAOS  
 - **Node 2**: Fujitsu Esprimo → running Wazuh (will be migrated)  
 - **Node 3**: HP Prodesk (Newest Node)
-- **Node 4**: Lenovo Thinkcentre → newest node, Wazuh target  
+- **Node 4**: Lenovo Thinkcentre → Wazuh target  
 
 ![](rpmn4th46.png)
 
