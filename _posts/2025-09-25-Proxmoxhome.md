@@ -25,7 +25,6 @@ That’s how it started — with just a single Dell Latitude E5550 running Proxm
 
 From there, curiosity grew dramatically. One node wasn’t enough. I wanted to see what a bigger cluster could do, how it would behave, and how far I could push this small homelab setup. That snowball effect led me to add more nodes, experiment with metrics, and eventually land on the current setup you see here.  
 
-
 ## Background
 - Last project: OpenWRT → InfluxDB logging on Raspberry Pi (later dismissed when I got proper nodes).  
 - Old server blew up → recovered DB and migrated to new container deployment.  
