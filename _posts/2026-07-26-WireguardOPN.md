@@ -49,3 +49,6 @@ Second rule allows traffic from the new interface into Wireguard network.
 ![](2026-07-26-16-07-51.png)
 
 After this tested my connections from phone and laptop, I was able to connect into all devices in my homelab - Proxmox - Raspberry PI and NAS-server.
+
+![](img1.jpeg)
+![](img2.jpeg)
