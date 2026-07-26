@@ -4,7 +4,7 @@ categories:
 layout: post
 image:
   path: hacking.png
-media_subpath: /assets/posts/2026-07-26-WireguardOPN
+media_subpath:
 tags:
   - Experiencing
   - Freetime
