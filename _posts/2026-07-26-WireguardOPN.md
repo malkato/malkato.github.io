@@ -2,6 +2,7 @@
 categories:
   - Freetime
 layout: post
+mermaid: true
 image:
   path: hacking.png
 media_subpath: /assets/posts/2026-07-26-WireguardOPN
@@ -18,6 +19,22 @@ While my time at hospital I was curious about testing OPNSense plugin to make a 
 
 - Wireguard official site : <https://www.wireguard.com/>
 - Tutorial for implementing Wireguard : <https://www.zenarmor.com/docs/network-security-tutorials/how-to-setup-wireguard-on-opnsense>
+
+```mermaid
+flowchart LR
+  subgraph Remote["Remote devices"]
+    Mac["MacBook"]
+    Phone["iPhone"]
+  end
+
+  Internet["Internet"] -->|"UDP :51820"| WAN["OPNsense WAN"]
+  WAN --> WG["WireGuard instance"]
+  WG --> FW["Firewall rules"]
+  FW --> Homelab["Homelab · Proxmox · Pi · NAS"]
+
+  Mac --> Internet
+  Phone --> Internet
+```
 
 ## Deployment
 

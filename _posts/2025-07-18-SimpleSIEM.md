@@ -2,6 +2,7 @@
 categories:
   - Freetime
 layout: post
+mermaid: true
 image:
   path: hacking.png
 media_subpath: /assets/posts/2025-07-18-SimpleSIEM/
@@ -21,6 +22,13 @@ title: Homelab - Testing Lightweight Stack SIEM
 *It’s not a huge setup, but it gives me a hands-on way to learn more about the traffic flows around my router and build a simple yet useful traffic analysis system.*
 
 *Tips: If you are too tired to write things down, just use AI to literature your own thoughts or instructions and paste them here.*
+
+```mermaid
+flowchart LR
+  Router["OpenWRT router"] -->|"syslog UDP :6514"| Fluent["Fluent Bit"]
+  Fluent -->|"writes metrics"| Influx["InfluxDB · fluentbit"]
+  Influx -->|"queries"| Grafana["Grafana dashboards"]
+```
 
 ### Installation
 

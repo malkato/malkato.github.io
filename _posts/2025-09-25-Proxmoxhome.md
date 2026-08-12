@@ -2,6 +2,7 @@
 categories:
   - Freetime
 layout: post
+mermaid: true
 image:
   path: hacking.png
 media_subpath: /assets/posts/2025-09-25-Proxmoxhome
@@ -14,6 +15,27 @@ title: Homelab - Proxmox Cluster + Portainer
 ## My Current Homelab Topology – Proxmox Cluster + Portainer Stack
 
 ## Topology
+
+```mermaid
+flowchart TB
+  subgraph Cluster["Proxmox Cluster (4 nodes)"]
+    N1["Node 1 · Dell E5550<br/>HAOS"]
+    N2["Node 2 · Fujitsu Esprimo<br/>Wazuh (migrating)"]
+    N3["Node 3 · HP Prodesk"]
+    N4["Node 4 · ThinkCentre<br/>Wazuh target"]
+  end
+
+  subgraph Pi["Raspberry Pi 5 · Portainer"]
+    Grafana["Grafana"]
+    Influx["InfluxDB"]
+    Memos["Memos"]
+  end
+
+  OpenWRT["OpenWRT · WiFi AP + WAN"] --> Switch["TP-Link Switch"]
+  Switch --> Cluster
+  Switch --> Pi
+  Grafana --> Influx
+```
 
 ![](2025-09-26-18-48-31.png)
 
