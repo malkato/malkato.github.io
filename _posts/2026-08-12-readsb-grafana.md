@@ -5,7 +5,7 @@ layout: post
 mermaid: true
 image:
   path: Starting.png
-media_subpath: /assets/posts/1970-01-01-readsb-grafana
+media_subpath: /assets/posts/2026-08-12-readsb-grafana
 tags:
   - Experiencing
   - Freetime
@@ -252,13 +252,13 @@ Keep the **live map in tar1090**; use **Grafana for trends** (planes over time, 
 
 ## Troubleshooting
 
-| Issue | Likely cause | Fix |
-|-------|----------------|-----|
-| `device busy` on SDR | rtl_433 and readsb share one dongle | Stop other SDR containers or add second RTL-SDR |
-| Collector `FileNotFoundError` | Wrong `aircraft.json` path | Run `find` and remount volume |
-| Influx write fails | Wrong network or DB name | Use Docker service name, not `localhost`, from inside container |
-| Grafana shows no data | Datasource URL or time range | Test query in Influx CLI first |
-| Flat zero aircraft | Antenna, gain, or location | Check tar1090 map; tune `--gain` on readsb |
+| Issue                         | Likely cause                        | Fix                                                             |
+| ----------------------------- | ----------------------------------- | --------------------------------------------------------------- |
+| `device busy` on SDR          | rtl_433 and readsb share one dongle | Stop other SDR containers or add second RTL-SDR                 |
+| Collector `FileNotFoundError` | Wrong `aircraft.json` path          | Run `find` and remount volume                                   |
+| Influx write fails            | Wrong network or DB name            | Use Docker service name, not `localhost`, from inside container |
+| Grafana shows no data         | Datasource URL or time range        | Test query in Influx CLI first                                  |
+| Flat zero aircraft            | Antenna, gain, or location          | Check tar1090 map; tune `--gain` on readsb                      |
 
 Issues I ran into while building this:
 
