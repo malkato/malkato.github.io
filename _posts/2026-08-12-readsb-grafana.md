@@ -5,7 +5,7 @@ layout: post
 mermaid: true
 image:
   path: Starting.png
-media_subpath: /assets/posts/1970-01-01-readsb-grafana
+media_subpath: /assets/posts/2026-08-12-readsb-grafana
 tags:
   - Experiencing
   - Freetime
