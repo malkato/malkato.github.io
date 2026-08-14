@@ -29,8 +29,8 @@ This post documents the pipeline:
 
 Related earlier posts:
 
-- [Nooelec SDR on Raspberry Pi](/posts/homelab-rf-experience-nooelec-nesdr-smart-v5/)
-- [rtl_433 + MQTT + HAOS](/posts/homelab-rf-experience-haos-sdr-datacenter-mqtt-sdr/)
+- Nooelec SDR on Raspberry Pi
+- rtl_433 + MQTT + HAOS
 
 Useful links:
 
