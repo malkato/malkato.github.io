@@ -99,8 +99,6 @@ curl -s http://127.0.0.1/data/aircraft.json | head -c 500
 ````
 
 Optional screenshot of tar1090 map:
-![](2025-07-18-21-41.png)
-
 ## InfluxDB setup
 
 Create a dedicated database for ADS-B metrics.
@@ -246,7 +244,7 @@ SELECT last("aircraft_count") FROM "adsb" WHERE time > now() - 5m
 ````
 
 Screenshot of finished dashboard:
-![](2025-07-18-21-41.png)
+
 
 Keep the **live map in tar1090**; use **Grafana for trends** (planes over time, range, altitude).
 
